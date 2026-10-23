@@ -35,3 +35,7 @@ def listar_produtos(request):
             return Response(serializers.data, status=status.HTTP_201_CREATED)
         else:
             return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET', 'PATCH'])
+def detakhe_produto(request, pk):
+    

@@ -3,6 +3,6 @@ from .views import listar_categorias, listar_produtos
 
 
 urlpatterns =[
-    path('categorias', listar_categorias),
-    path('produtos', listar_produtos)
+    path('categorias/', listar_categorias),
+    path('produtos/', listar_produtos)
 ]
