@@ -19,7 +19,6 @@ def listar_categorias(request):
             return Response(serializers.data, status=status.HTTP_201_CREATED)
         else:
             return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
-# Create your views here.
 
 @api_view(['GET', 'POST'])
 def listar_produtos(request):
@@ -36,6 +35,3 @@ def listar_produtos(request):
         else:
             return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['GET', 'PATCH'])
-def detakhe_produto(request, pk):
-    
